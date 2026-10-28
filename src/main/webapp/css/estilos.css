@@ -1,0 +1,83 @@
+/* Estilos del Proyecto Música — paleta institucional */
+:root {
+  --terracota: #C0612B;
+  --teal: #3A8C8C;
+  --dorado: #E8C84A;
+  --pergamino: #F3EBD9;
+  --superficie: #FBF6EA;
+  --linea: #D9CBB0;
+  --tinta: #2B2118;
+  --suave: #6B5B4B;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--pergamino);
+  color: var(--tinta);
+  font-family: "Trebuchet MS", sans-serif;
+  line-height: 1.5;
+}
+
+header {
+  background: var(--terracota);
+  color: #fff;
+  padding: 1rem 1.5rem;
+  border-bottom: 4px solid var(--dorado);
+}
+header h1 { margin: 0; font-size: 1.4rem; }
+header nav a { color: #fff; margin-right: 1rem; font-weight: bold; }
+
+main { max-width: 900px; margin: 0 auto; padding: 1.5rem 1rem 3rem; }
+
+h2 { color: var(--teal); border-bottom: 2px solid var(--teal); padding-bottom: .3rem; }
+
+.error {
+  background: #F7E2D6;
+  border-left: 5px solid var(--terracota);
+  padding: .7rem 1rem;
+  margin: 1rem 0;
+  font-weight: bold;
+}
+
+table { width: 100%; border-collapse: collapse; background: var(--superficie); margin: 1rem 0; }
+th { background: var(--terracota); color: #fff; text-align: left; padding: .5rem .6rem; }
+td { padding: .5rem .6rem; border-bottom: 1px solid var(--linea); vertical-align: middle; }
+td.acciones { white-space: nowrap; }
+td.acciones form { display: inline; }
+.vacio { color: var(--suave); font-style: italic; }
+
+form.formulario {
+  background: var(--superficie);
+  border: 1px solid var(--linea);
+  border-radius: 8px;
+  padding: 1rem;
+  display: grid;
+  gap: .7rem;
+  max-width: 420px;
+}
+form.formulario label { display: grid; gap: .2rem; font-weight: bold; font-size: .95rem; }
+input {
+  font: inherit;
+  padding: .4rem .5rem;
+  border: 1px solid var(--linea);
+  border-radius: 5px;
+}
+
+button, .boton {
+  font: inherit;
+  font-weight: bold;
+  background: var(--teal);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: .4rem .9rem;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+button.peligro { background: var(--terracota); }
+.boton.secundario { background: var(--suave); }
+
+footer { text-align: center; color: var(--suave); font-size: .85rem; padding: 1rem; }

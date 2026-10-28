@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Proyecto Música</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<header>
+  <h1>Proyecto Música</h1>
+</header>
+<main>
+  <p><b>Si ves esta página, Tomcat está corriendo la aplicación.</b></p>
+  <p>Las pantallas se abren desde los Servlets, no desde los JSP. Mientras no hayas creado el Servlet, el enlace da error 404.</p>
+
+  <h2>Pantallas</h2>
+  <p>
+    <a class="boton" href="SvArtistaListar">Artistas</a>
+    <a class="boton" href="SvCancionListar">Canciones</a>
+  </p>
+
+  <h2>Servlets que vas a crear</h2>
+  <table>
+    <tr><th>Servlet</th><th>Método</th><th>Qué hace</th></tr>
+    <tr><td><code>SvArtistaListar</code></td><td>GET</td><td>Busca todos y hace forward a <code>artistas.jsp</code></td></tr>
+    <tr><td><code>SvArtistaCrear</code></td><td>POST</td><td>Alta, y redirige al listado</td></tr>
+    <tr><td><code>SvArtistaEditar</code></td><td>GET / POST</td><td>GET: muestra <code>editarArtista.jsp</code>. POST: guarda los cambios</td></tr>
+    <tr><td><code>SvArtistaEliminar</code></td><td>POST</td><td>Baja, y redirige al listado</td></tr>
+  </table>
+  <p>Y los mismos cuatro para Canción: <code>SvCancionListar</code>, <code>SvCancionCrear</code>, <code>SvCancionEditar</code> y <code>SvCancionEliminar</code>.</p>
+</main>
+<footer>Prof. Sebastián Muñoz — Instituto Técnico Ntra. Sra. de Fátima (A-893)</footer>
+</body>
+</html>
